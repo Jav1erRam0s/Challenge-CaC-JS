@@ -1,0 +1,123 @@
+/* Colores */
+
+:root {
+  /* header */
+  --header-text-comprar-tickets-color: #2B8142;
+
+  /* presentacion */
+  --carousel-background: rgba(0, 0, 0, 0.5);
+  --carousel-color: white;
+
+  --btn-comprar-tickets-color: white;
+  --btn-comprar-tickets-background: #29A744;
+  --btn-comprar-tickets-background-hover: #29A744c0;
+
+  /* lugar y fecha */
+  --lugar-y-fecha-background: #353A40;
+  --lugar-y-fecha-color: white;
+
+  /* conviértete en orador */
+  --btn-enviar-color: white;
+  --btn-enviar-background: #96C93E;
+  --btn-enviar-background-hover: #96C93Ec0;
+
+  /* footer */
+  --footer-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,83,114,1) 100%);
+  --footer-color: white;
+}
+
+/* Header */
+
+#header img {
+  width: 80px;
+}
+
+.header-text-comprar-tickets {
+  color: var(--header-text-comprar-tickets-color) !important;
+}
+
+/* Presentacion */
+
+#presentacion .carousel-inner img {
+  max-height: 70vh;
+  object-fit: cover;
+  filter: grayscale(70%);
+}
+
+#carousel {
+  position: relative;
+}
+
+#carousel .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--carousel-background);
+  color: var(--carousel-color);
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row {
+  height: 100%;
+}
+
+.btn-comprar-tickets {
+  background-color: var(--btn-comprar-tickets-background);
+  color: var(--btn-comprar-tickets-color);
+}
+
+.btn-comprar-tickets:hover {
+  background-color: var(--btn-comprar-tickets-background-hover);
+}
+
+/* Conoce a los oradores */
+.container-card-img{
+    width: 100%;
+    height: 350px;
+}
+
+.card img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Lugar y fecha */
+
+#lugar-y-fecha {
+  background-color: var(--lugar-y-fecha-background);
+  color: var(--lugar-y-fecha-color);
+}
+
+#lugar-y-fecha img {
+  max-width: 100%;
+}
+
+/* Conviértete en orador */
+
+.btn-enviar {
+  background-color: var(--btn-enviar-background);
+  color: var(--btn-enviar-color);
+}
+
+.btn-enviar:hover {
+  background-color: var(--btn-enviar-background-hover);
+}
+
+/* Footer */
+
+#footer {
+  background: var(--footer-background);
+}
+
+#footer a {
+  color: var(--footer-color);
+}
+
+.footer-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
